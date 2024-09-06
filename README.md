@@ -10,6 +10,8 @@
 
 # Idea 1: Internet shop
 
+Internet shop that allows user to browse and purchase products online.
+
 ### Features
 - Filter and sort products by different metrics
 - Search for specific products
@@ -19,6 +21,9 @@
 - Admin privileges - add or remove products, manage the website
 
 # Idea 2: Financial tracker
+
+Financial tracker allows users to check their budget and plan for the future with graphs and charts
+to help visualize their spending habits.
 
 ### Features
 - Add monthly income information
@@ -31,6 +36,9 @@
 - Budget planning
 
 # Idea 3: Online workspace (Notion)
+
+Online workspace allows users to plan and manage tasks together with the option
+to make time tables, checklists and notes to increase productivity and save time.
 
 ### Features
 - Real time coviewing
