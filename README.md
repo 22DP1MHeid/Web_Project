@@ -7,7 +7,6 @@
 - User login/register
 - User authenthication
 - Options for filtering/sorting
-- 
 
 # Idea 1: Internet shop
 
