@@ -4,6 +4,7 @@
 - HTML, CSS, JavaScript
 - Framework (React, SpringBoot)
 - Database
+- API
 - User login/register
 - User authenthication
 - Options for filtering/sorting
