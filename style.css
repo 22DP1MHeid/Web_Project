@@ -1,14 +1,19 @@
 body {
-    background-color: dimgray;
+    background-color: rgba(105, 105, 105, 0.541);
 }
 
 h1 {
     color: mintcream;
 }
 
-p {
-    color: mintcream;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
+.white_text {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
 }
 
+.center_header {
+    background-color: black;
+    text-align: center;
+    font-size: large;
+}
