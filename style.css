@@ -6,10 +6,15 @@ h1 {
     color: mintcream;
 }
 
+nav {
+    color: greenyellow;
+}
+
 .white_text {
     color: white;
     font-size: 18px;
     font-weight: 100;
+    text-align: center;
 }
 
 .center_header {
@@ -17,3 +22,37 @@ h1 {
     text-align: center;
     font-size: large;
 }
+
+.flex-container {
+    display: flex;
+    background-color:black;
+  }
+  
+  .flex-container > div {
+    background-color: black;
+    margin: 0px;
+  }
+
+  div {
+    text-align: center;
+    height: 150px;
+    transition-property: height;
+    transition-duration: 1s;
+  }
+
+  div:hover {
+    height: 200px;
+  }
+
+  button {
+    color: white;
+    background-color: black;
+    font-size: small;
+    transition-property: color;
+    transition-property: background-color;
+  }
+
+  button:hover {
+    color:black
+    background-color: white;
+  }
