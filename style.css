@@ -1,13 +1,24 @@
 body {
-    background-color: rgba(105, 105, 105, 0.541);
+    background-color: #393e46;
+}
+
+header {
+  background-color:#0092ca;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 h1 {
     color: mintcream;
+    padding: 10px;
 }
 
-nav {
-    color: greenyellow;
+h2 {
+  color: mintcream;
+  padding: 5px;
+  font-size: 20px;
 }
 
 .white_text {
@@ -15,44 +26,71 @@ nav {
     font-size: 18px;
     font-weight: 100;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .center_header {
-    background-color: black;
+    background-color: #222831;
     text-align: center;
     font-size: large;
 }
 
 .flex-container {
     display: flex;
-    background-color:black;
+    background-color:#393e46;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
   }
   
-  .flex-container > div {
-    background-color: black;
-    margin: 0px;
+.flex-container > div {
+  background-color: #222831;
+  margin: 0px;
   }
 
-  div {
-    text-align: center;
-    height: 150px;
-    transition-property: height;
-    transition-duration: 1s;
-  }
+div {
+  text-align: center;
+  height: 150px;
+  transition-property: height;
+  transition-duration: 1s;
+}
 
-  div:hover {
-    height: 200px;
-  }
+div:hover {
+  height: 200px;
+}
 
-  button {
-    color: white;
-    background-color: black;
-    font-size: small;
-    transition-property: color;
-    transition-property: background-color;
-  }
+button {
+  color: white;
+  background-color: #222831;
+  font-size: small;
+  transition-property: color;
+}
 
-  button:hover {
-    color:black
-    background-color: white;
-  }
+button:hover {
+  color:rgb(47, 196, 255);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  font-weight: 700;
+  margin: 5px;
+  transition-property: background-color;
+  transition-property: font-size;
+  transition-duration: 0.33s;
+}
+
+li:hover {
+  background-color: #222831;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #222831;
+}
