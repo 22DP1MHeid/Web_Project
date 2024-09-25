@@ -3,11 +3,11 @@ body {
 }
 
 header {
-  background-color:#0092ca;
-  color: white;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 600;
+    background-color:#0092ca;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 h1 {
@@ -16,9 +16,9 @@ h1 {
 }
 
 h2 {
-  color: mintcream;
-  padding: 5px;
-  font-size: 20px;
+    color: mintcream;
+    padding: 5px;
+    font-size: 20px;
 }
 
 .white_text {
@@ -40,8 +40,10 @@ h2 {
     display: flex;
     background-color:#393e46;
     justify-content: space-between;
-    gap: 20px;
-    padding: 10px;
+    gap: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
   }
   
 .flex-container > div {
