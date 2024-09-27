@@ -1,5 +1,8 @@
 body {
     background-color: #393e46;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -8,6 +11,7 @@ header {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
+    padding: 20px;
 }
 
 h1 {
@@ -39,16 +43,20 @@ h2 {
 .flex-container {
     display: flex;
     background-color:#393e46;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
+    flex-wrap: nowrap;
+    
   }
   
 .flex-container > div {
   background-color: #222831;
-  margin: 0px;
+  border: 1px solid #777;
+    padding: 15px;
+    margin: 1px;
   }
 
 div {
@@ -77,6 +85,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 li {
@@ -96,4 +105,9 @@ li:hover {
 footer {
   background-color: #222831;
   margin-top: 100px;
+}
+
+.logo{
+  border-radius: 200px;
+  width: 100px;
 }
