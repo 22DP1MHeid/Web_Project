@@ -1,12 +1,12 @@
 body {
-    background-color: #393e46;
+    background-color: #ffffff;
     color: white;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color:#0092ca;
+    background-color:black ;
     color: white;
     text-align: center;
     font-size: 35px;
@@ -15,18 +15,18 @@ header {
 }
 
 h1 {
-    color: mintcream;
+    color: white;
     padding: 10px;
 }
 
 h2 {
-    color: mintcream;
+    color: black;
     padding: 5px;
     font-size: 20px;
 }
 
-.white_text {
-    color: white;
+.basic_text {
+    color: black;
     font-size: 18px;
     font-weight: 100;
     text-align: center;
@@ -35,14 +35,14 @@ h2 {
 }
 
 .center_header {
-    background-color: #222831;
+    color: black;
     text-align: center;
     font-size: large;
 }
 
 .flex-container {
     display: flex;
-    background-color:#393e46;
+    background-color:black;
     justify-content: space-around;
     gap: 30px;
     padding: 20px;
@@ -53,8 +53,8 @@ h2 {
   }
   
 .flex-container > div {
-  background-color: #222831;
-  border: 1px solid #777;
+  background-color: #ffffff;
+  border: 1px solid #000000;
     padding: 15px;
     margin: 1px;
   }
@@ -67,12 +67,12 @@ div {
 }
 
 div:hover {
-  height: 200px;
+  height: 170px;
 }
 
 button {
   color: white;
-  background-color: #222831;
+  background-color: black;
   font-size: small;
   transition-property: color;
 }
@@ -94,7 +94,7 @@ li {
   margin: 5px;
   transition-property: background-color;
   transition-property: font-size;
-  transition-duration: 0.33s;
+  transition-duration: 0.5s;
 }
 
 li:hover {
@@ -105,6 +105,15 @@ li:hover {
 footer {
   background-color: #222831;
   margin-top: 100px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo{
