@@ -1,122 +1,247 @@
 body {
-    background-color: #ffffff;
-    color: white;
-    margin: 0;
-    padding: 0;
+  background-color: #ffffff;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color:black ;
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 600;
-    padding: 20px;
+  background-color:black ;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  padding: 20px;
 }
 
 h1 {
-    color: white;
-    padding: 10px;
+  color: white;
+  padding: 10px;
 }
 
 h2 {
-    color: black;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.basic_text {
-    color: black;
-    font-size: 18px;
-    font-weight: 100;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.center_header {
-    color: black;
-    text-align: center;
-    font-size: large;
-}
-
-.flex-container {
-    display: flex;
-    background-color:black;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    flex-wrap: nowrap;
-    
-  }
-  
-.flex-container > div {
-  background-color: #ffffff;
-  border: 1px solid #000000;
-    padding: 15px;
-    margin: 1px;
-  }
-
-div {
-  text-align: center;
-  height: 150px;
-  transition-property: height;
-  transition-duration: 1s;
-}
-
-div:hover {
-  height: 170px;
-}
-
-button {
-  color: white;
-  background-color: black;
-  font-size: small;
-  transition-property: color;
-}
-
-button:hover {
-  color:rgb(47, 196, 255);
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  font-weight: 700;
-  margin: 5px;
-  transition-property: background-color;
-  transition-property: font-size;
-  transition-duration: 0.5s;
-}
-
-li:hover {
-  background-color: #222831;
+  color: black;
+  padding: 5px;
   font-size: 20px;
 }
 
-footer {
-  background-color: #222831;
-  margin-top: 100px;
-}
-
-.footer {
-  color: white;
-  text-align: center;
+.basic_text {
+  color: black;
   font-size: 18px;
   font-weight: 100;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
+.center_header {
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+
+.flex-container {
+  display: flex;
+  background-color:black;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  flex-wrap: nowrap;
+  
+}
+
+.flex-container > div {
+background-color: #ffffff;
+border: 1px solid #000000;
+  padding: 15px;
+  margin: 1px;
+}
+
+div {
+text-align: center;
+height: 150px;
+transition-property: height;
+transition-duration: 1s;
+}
+
+div:hover {
+height: 170px;
+}
+
+button {
+color: white;
+background-color: black;
+font-size: small;
+transition-property: color;
+}
+
+button:hover {
+color:rgb(47, 196, 255);
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+li {
+display: inline-block;
+font-weight: 700;
+margin: 5px;
+transition-property: background-color;
+transition-property: font-size;
+transition-duration: 0.5s;
+}
+
+li:hover {
+background-color: #222831;
+font-size: 20px;
+}
+
+footer {
+background-color: #222831;
+margin-top: 100px;
+}
+
+.footer {
+color: white;
+text-align: center;
+font-size: 18px;
+font-weight: 100;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
 .logo{
-  border-radius: 200px;
-  width: 100px;
+border-radius: 200px;
+width: 100px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative; /* Lai varētu pievienot dropdown */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: #ff4081; /* Krāsa, kad peles kursors ir virs */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  margin-top: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.navbar ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown a:hover {
+  background-color: #555; /* Background krāsa, kad peles kursors ir virs */
+}
+
+/* Hamburger izvēlne */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Modālais logs */
+.modal {
+  display: none; /* Paslēpt sākumā */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsīva hamburger izvēlne */
+@media (max-width: 768px) {
+  .navbar ul {
+      display: none; /* Paslēpt uz maziem ekrāniem */
+  }
+
+  .hamburger {
+      display: flex; /* Rādīt hamburgeru */
+  }
+
+  .navbar.active ul {
+      display: flex; /* Rādīt, kad ir aktivizēta */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Pārvietot uz leju zem hamburgera */
+      width: 100%;
+      background-color: #333;
+      z-index: 2;
+  }
 }
