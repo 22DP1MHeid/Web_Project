@@ -14,21 +14,24 @@
 
 <!-- Navigation aisle -->
 <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Blogs</a></li>
-        <li><a href="#contact">Products</a></li>
-        <li><a href="#news">News</a></li>
+    <div class="hamburger" onclick="openModal()">&#9776;
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
         <li class="dropdown">
-            <a href="#more">Other</a>
-            <ul class="dropdown-content">
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+            <a href="#" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+                <a href="#">Our Team</a>
+                <a href="#">Our Story</a>
+                <a href="#">Mission & Vision</a>
+            </div>
         </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 </nav>
 
 <hr>
@@ -52,30 +55,55 @@
         <h2 class="car-name">E46</h2>
 
         <p>Released in 1998.</p>
-        <button>READ MORE</button>
+        <button class="open-modal" data-modal="modal1">READ MORE</button>
     </div>
     <div class="card">
         <div class="card-image car-2"></div>
         <h2 class="car-name">F10 </h2>
         <p>Released in 2010.</p>
-        <button>READ MORE</button>
+        <button class="open-modal" data-modal="modal2">READ MORE</button>
     </div>
     <div class="card">
         <div class="card-image car-3"></div>
         <h2 class="car-name">E36 </h2>
         <p>Released in 1990.</p>
-        <button>READ MORE</button>
+        <button class="open-modal" data-modal="modal3">READ MORE</button>
     </div>
 
 </section>
 <br>
 
+<!-- Modal popup boxes for BMW cars-->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal1">&times;</span>
+        <h2>BMW E46</h2>
+        <p>The BMW E46 was released in 1998 and has become one of the most iconic models in BMW's 3 Series range.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal2">&times;</span>
+        <h2>BMW F10</h2>
+        <p>The BMW F10 was produced from 2010 to 2017 and represents a major leap forward in design and technology.</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal3">&times;</span>
+        <h2>BMW E36</h2>
+        <p>The BMW E36 was produced between 1990 and 1999, known for its exceptional handling and performance.</p>
+    </div>
+</div>
 
 <!-- Extra fun fact about BMW (aside) -->
 <aside class="basic_text">Fun fact: BMW started off building airplane engines which is represented on their emblem
     - the white represents propellers on a plane and the blue represnts the sky.
 </aside>
 <br>
+
 
 
 <!-- Text about Mercedes cars -->
@@ -94,22 +122,47 @@
         <div class="card-image car-4"></div>
         <h2 class="car-name">G63</h2>
         <p>Released in 2024.</p>
-        <button>READ MORE</button>
+        <button class="open-modal" data-modal="modal4">READ MORE</button>
     </div>
     <div class="card">
         <div class="card-image car-5"></div>
         <h2 class="car-name">S450 </h2>
         <p>Released in 2010.</p>
-        <button>READ MORE</button>
+        <button class="open-modal" data-modal="modal5">READ MORE</button>
     </div>
     <div class="card">
         <div class="card-image car-6"></div>
         <h2 class="car-name">C220 </h2>
         <p>Released in 1990.</p>
-        <button>READ MORE</button>
+        <button class="open-modal" data-modal="modal6">READ MORE</button>
     </div>
 
 </section>
+
+<!-- Modal popup windows for Mercedes cars -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal4">&times;</span>
+        <h2>G63</h2>
+        <p>The 2024 Mercedes G63 AMG combines luxurious comfort with incredible off-road capability. Known for its rugged design and powerful V8 engine, this SUV offers an exhilarating driving experience both on and off the road.</p>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal5">&times;</span>
+        <h2>S450</h2>
+        <p>The 2010 Mercedes S450 exemplifies elegance and innovation. Equipped with advanced technology and a refined V6 engine, the S450 offers a smooth ride, making it a leader in luxury sedans for its time.</p>
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modal6">&times;</span>
+        <h2>C220</h2>
+        <p>The Mercedes C220, released in 1990, is a classic compact executive car. Known for its reliability, fuel efficiency, and refined driving dynamics, it remains a favorite among enthusiasts of vintage luxury cars.</p>
+    </div>
+</div>
 
 <!-- Social links (footer) -->
 <footer class="footer"> All socials: @CarHorizon</footer>
