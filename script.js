@@ -1,22 +1,34 @@
 function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
 }
 
-function openModal() {
-    const modal = document.getElementById("myModal");
-    modal.style.display = "block";
-}
+// Modal functionality
+const openModalButtons = document.querySelectorAll('.open-modal');
+const closeModalButtons = document.querySelectorAll('.close');
+const modals = document.querySelectorAll('.modal');
 
-function closeModal() {
-    const modal = document.getElementById("myModal");
-    modal.style.display = "none";
-}
+// Open the modal
+openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.getElementById(button.getAttribute('data-modal'));
+        modal.style.display = 'block';
+    });
+});
 
-// Close the modal when the user clicks anywhere outside of it
-window.onclick = function(event) {
-    const modal = document.getElementById("myModal");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+// Close the modal
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.getElementById(button.getAttribute('data-modal'));
+        modal.style.display = 'none';
+    });
+});
+
+// Close modal when clicking outside of it
+window.addEventListener('click', (event) => {
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
