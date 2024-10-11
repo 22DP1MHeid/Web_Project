@@ -3,6 +3,11 @@ function toggleMenu() {
     navbar.classList.toggle('active');
 }
 
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
 // Modal functionality
 const openModalButtons = document.querySelectorAll('.open-modal');
 const closeModalButtons = document.querySelectorAll('.close');
