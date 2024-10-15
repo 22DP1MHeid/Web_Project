@@ -353,3 +353,23 @@ padding-bottom: 10px;
 .dark-mode {
   background-color: #222831;
 }
+
+.dark-mode p {
+  color: white;
+}
+
+.dark-mode h1 {
+  color: white
+}
+
+.dark-mode h2 {
+  color: white
+}
+
+.dark-mode aside {
+  color: white
+}
+
+.dark-mode footer {
+  background-color: #000000;
+}
